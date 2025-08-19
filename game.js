@@ -14,10 +14,6 @@ console.log("");
 console.log("");
 }
 
-// start game prompt
-textBreak();
-console.log("Press 1 to start");
-
 // welcome text
 console.log("WELCOME TO THE");
 console.log("______ _   _ _   _ _____  _____ _____ _   _") ;
@@ -26,5 +22,6 @@ console.log("| | | | | | |  \| | |  \/| |__ | | | |  \| |");
 console.log("| | | | | | | . ` | | __ |  __|| | | | . ` |");
 console.log("| |/ /| |_| | |\  | |_\ \| |___\ \_/ / |\  |");
 console.log("|___/  \___/\_| \_/\____/\____/ \___/\_| \_/");
+textBreak();
 
 // game logic
