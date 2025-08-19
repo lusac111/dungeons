@@ -7,3 +7,24 @@ var survivalMessages = ["You survived!", "A rock fell from the ceiling... but it
 // death messages array - used to track messages outputted when the player dies
 var deathMessages = ["You died", "A brick fell on your head", "You ran into a bottomless pit... but you jumped over it"];
 
+//function to break console text by 3 rows
+function textBreak() {
+console.log("");
+console.log("");
+console.log("");
+}
+
+// start game prompt
+textBreak();
+console.log("Press 1 to start");
+
+// welcome text
+console.log("WELCOME TO THE");
+console.log("______ _   _ _   _ _____  _____ _____ _   _") ;
+console.log("|  _  \ | | | \ | |  __ \|  ___|  _  | \ | |");
+console.log("| | | | | | |  \| | |  \/| |__ | | | |  \| |");
+console.log("| | | | | | | . ` | | __ |  __|| | | | . ` |");
+console.log("| |/ /| |_| | |\  | |_\ \| |___\ \_/ / |\  |");
+console.log("|___/  \___/\_| \_/\____/\____/ \___/\_| \_/");
+
+// game logic
