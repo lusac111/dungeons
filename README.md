@@ -5,3 +5,4 @@ Dungeons is a simple text-based javascript console game about choice. Choose you
   - After choosing, press enter to submit your choice.
   - Each time you choose correctly, your score will increase.
   - If you choose incorrectly, your game will end.
+  - currently game runs in the debug console... sorry??
