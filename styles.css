@@ -20,7 +20,9 @@ body {
     background-color: #222420;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 10px 2px;
+    color: white;
+    box-shadow: 0 0 10px 2px black;
+
 }
 
 .btn-grid {
