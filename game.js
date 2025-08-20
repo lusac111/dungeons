@@ -17,7 +17,10 @@ const survivalMessages = [
     'You dodge a falling rock just in time.'
 ]
 
+let score = 0
+
 function startGame() {
+    score = 0
     showDirectionChoice()
 }
 
@@ -38,13 +41,14 @@ function handleDirection(direction) {
     if (Math.random() < 0.3) {
         showDeath()
     } else {
+        score += 1
         showSurvival(direction)
     }
 }
 
 function showDeath() {
     const msg = deathMessages[Math.floor(Math.random() * deathMessages.length)]
-    textElement.innerText = msg
+    textElement.innerText = `${msg}\nScore: ${score}`
     optionButtonsElement.innerHTML = ''
     const restartBtn = document.createElement('button')
     restartBtn.innerText = 'Restart'
@@ -55,7 +59,7 @@ function showDeath() {
 
 function showSurvival(direction) {
     const msg = survivalMessages[Math.floor(Math.random() * survivalMessages.length)]
-    textElement.innerText = `${msg} You travel ${direction.toLowerCase()}.`
+    textElement.innerText = `${msg} You travel ${direction.toLowerCase()}.\nScore: ${score}`
     optionButtonsElement.innerHTML = ''
     const continueBtn = document.createElement('button')
     continueBtn.innerText = 'Continue'
