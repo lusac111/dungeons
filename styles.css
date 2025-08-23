@@ -1,25 +1,25 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: #30382b;
+h1 {
+    text-align: center;
+    color: rgb(255, 230, 0);
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2.5px;
 }
 
 .container {
+    margin: 25% auto;
     width: 800px;
-    max-width: 80%;
+    max-width: 90%;
     background-color: #222420;
     padding: 10px;
     border-radius: 5px;
+    text-align: center;
     color: white;
     box-shadow: 0 0 10px 2px black;
 
@@ -44,4 +44,31 @@ body {
     background-color: green;
     color: black;
     border: 1px solid white;
+}
+
+
+/* Add your styles here */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/dungeonTileTinted.png);
+    background-repeat: repeat;
+    background-color: #30382b;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 1em;
+
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 1em;
 }
