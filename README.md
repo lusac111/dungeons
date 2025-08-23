@@ -7,3 +7,4 @@ Dungeons is a simple text-based javascript game about choice. Choose your path w
 
 Github copilot was used to create scoring along with making the UI function.
 UI made using a tutorial by Web Dev Simplified on youtube [tutorial link](https://youtu.be/R1S_NhKkvGA?si=PHD0-wVvPqPV_3nK)
+Game background <a href="http://www.freepik.com">Designed by 0melapics / Frederik</a>
