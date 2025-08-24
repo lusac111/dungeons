@@ -1,84 +1,84 @@
-  @font-face {
-      font-family: 'roadRageFont';
-      src: url(assets/RoadRage-Regular.ttf) format('truetype');
-      font-weight: normal;
-      font-style: normal;
-  }
+.road-rage-regular {
+    font-family: "Road Rage", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
 
 
-  *,
-  *::before,
-  *::after {
-      box-sizing: border-box;
-      font-family: 'Courier New', Courier, monospace;
-      font-weight: bold;
-  }
+h1 {
+    text-align: center;
+    color: #ffe600;
+    font-family: 'Road Rage', sans-serif;
+    letter-spacing: 2.5px;
+    font-size: 4em;
+}
 
+.container {
+    margin: 25% auto;
+    width: 800px;
+    max-width: 90%;
+    background-color: #001800;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px 5px #73a371;
 
-  h1 {
-      text-align: center;
-      color: #ffe600;
-      font-family: 'roadRageFont', sans-serif;
-      letter-spacing: 2.5px;
-      font-size: 4em;
-  }
+}
 
-  .container {
-      margin: 25% auto;
-      width: 800px;
-      max-width: 90%;
-      background-color: #001800;
-      padding: 10px;
-      border-radius: 5px;
-      text-align: center;
-      color: white;
-      box-shadow: 0 0 10px 5px #73a371;
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
 
-  }
+.btn {
+    background-color: #38704b;
+    border: 1px solid #264a10;
+    color: #ffe600;
+    outline: none;
+}
 
-  .btn-grid {
-      display: grid;
-      grid-template-columns: repeat(2, auto);
-      gap: 10px;
-      margin-top: 20px;
-  }
+.btn:hover {
+    scale: 1.15;
+    background-color: #384570;
+    color: #ffe600;
+    border: 1px solid white;
+}
 
-  .btn {
-      background-color: #38704b;
-      border: 1px solid #264a10;
-      color: #ffe600;
-      outline: none;
-  }
+.btn:active {
+    border: 1px solid #ffe600;
+}
 
-  .btn:hover {
-      scale: 1.15;
-      background-color: #384570;
-      color: #ffe600;
-      border: 1px solid white;
-  }
-    .btn:active {
-        border: 1px solid #ffe600;
-    }
-  body {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      background-image: url(assets/dungeonTileTinted.png);
-      background-repeat: repeat;
-      background-color: #30382b;
-      align-items: center;
-      justify-content: center;
-      margin: 0;
-      padding: 1em;
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/dungeonTileTinted.png);
+    background-repeat: repeat;
+    background-color: #30382b;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 1em;
 
-  }
+}
 
-  main {
-      flex: 1;
-  }
+main {
+    flex: 1;
+}
 
-  footer {
-      flex-shrink: 0;
-      text-align: center;
-      padding: 1em;
-  }
+footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 1em;
+}
